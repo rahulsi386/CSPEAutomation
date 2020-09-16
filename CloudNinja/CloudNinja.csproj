@@ -17,10 +17,4 @@
     </Content>
   </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Helpers\" />
-      <Folder Include="Cards\" />
-      <Folder Include="Resources\" />
-    </ItemGroup>
-
 </Project>

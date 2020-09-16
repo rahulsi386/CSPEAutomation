@@ -1,0 +1,52 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "weight": "bolder",
+      "text": "Project Details",
+      "id": "CardHeading"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Project Name:",
+          "value": "null"
+        },
+        {
+          "title": "Description:",
+          "value": "null"
+        },
+        {
+          "title": "Owner's Email:",
+          "value": "null"
+        },
+        {
+          "title": "Azure Services Used:",
+          "value": "null"
+        },
+        {
+          "title": "Clarity Id:",
+          "value": "null"
+        },
+        {
+          "title": "eHLCCD:",
+          "value": "null"
+        },
+        {
+          "title": "Cost Center:",
+          "value": "null"
+        },
+        {
+          "title": "Billing Contact's Email:",
+          "value": "null"
+        }
+      ],
+      "id": "ProjectInfo"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

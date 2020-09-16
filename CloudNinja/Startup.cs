@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using CloudNinja.Bots;
+using CloudNinja.Dialogs;
 
 namespace CloudNinja
 {
@@ -31,9 +32,13 @@ namespace CloudNinja
 
             // Create the Bot Framework Adapter with error handling enabled.
             services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
+            services.AddSingleton<IStorage, MemoryStorage>();
+            services.AddSingleton<UserState>();
+            services.AddSingleton<ConversationState>();
+            services.AddSingleton<RootDialog>();
 
             // Create the bot as a transient. In this case the ASP Controller is expecting an IBot.
-            services.AddTransient<IBot, CloudNinjaBot>();
+            services.AddTransient<IBot, WelcomeAndOptionsBot<RootDialog>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
