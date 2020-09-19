@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using CloudNinja.Helpers;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Choices;
 using CloudNinja.Cards;
+using CloudNinja.Helpers;
 
 namespace CloudNinja.Dialogs
 {
@@ -17,7 +17,7 @@ namespace CloudNinja.Dialogs
         public NewProjectDialog() : base(nameof(NewProjectDialog))
         {
             AddDialog(new TextPrompt(nameof(TextPrompt)));
-            AddDialog(new SubmitProjectDialog());
+            //AddDialog(new SubmitProjectDialog());
             AddDialog(new ConfirmPrompt(nameof(ConfirmPrompt)));
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), new WaterfallStep[]
             {
@@ -190,23 +190,48 @@ namespace CloudNinja.Dialogs
             var projInfo = (ProjectInfo)stepContext.Values[ProjectInfo];
 
             if (stepContext.Context.Activity.Text is "Yes")
+            {                
+                string projname = ((ProjectInfo)stepContext.Values[ProjectInfo]).ProjectName;
+                string desc = ((ProjectInfo)stepContext.Values[ProjectInfo]).Description;
+                string owneremail = ((ProjectInfo)stepContext.Values[ProjectInfo]).ProjectOwnerEmail;
+                string azservices = ((ProjectInfo)stepContext.Values[ProjectInfo]).AzureServicesUsed;
+                string clarityid = ((ProjectInfo)stepContext.Values[ProjectInfo]).ClarityId;
+                string ehlccd = ((ProjectInfo)stepContext.Values[ProjectInfo]).eHLCCD;
+                string costcenter = ((ProjectInfo)stepContext.Values[ProjectInfo]).CostCenter;
+                string billingcontact = ((ProjectInfo)stepContext.Values[ProjectInfo]).BillingContactEmail;
+
+                string responseResult= await AddProjectDetails.InvokeAddProjectDetailsFunction(projname, desc, owneremail, azservices, clarityid, ehlccd, costcenter, billingcontact);
+                if (responseResult.Contains("Status: OK - Successfully added new project detail in database."))
+                {
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text("We've registered your project request in CSPE database. Further detail is sent to Project Owner's email id."), cancellationToken);
+                    return await stepContext.EndDialogAsync(stepContext.Values[ProjectInfo], cancellationToken);
+                }
+                else
+                {
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text(responseResult),cancellationToken);
+                    return await stepContext.EndDialogAsync();
+                }
+
+                
+            }
+            else if(stepContext.Context.Activity.Text is "No")
             {
-                await stepContext.Context.SendActivityAsync(
-                MessageFactory.Attachment(
-                    ActivityCards.ProjInfoConfirmationCard(
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).ProjectName,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).Description,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).ProjectOwnerEmail,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).AzureServicesUsed,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).ClarityId,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).eHLCCD,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).CostCenter,
-                        ((ProjectInfo)stepContext.Values[ProjectInfo]).BillingContactEmail
-                        )), cancellationToken);
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text("All the entries will be discarded."));
+                return await stepContext.PromptAsync(nameof(ConfirmPrompt), new PromptOptions
+                {
+                    Prompt = MessageFactory.Text("Are you sure, you want to discard Project details?"),
+                    Choices = new List<Choice>
+                {
+                    new Choice { Value = "Yes" },
+                    new Choice { Value = "No" }
+                }
+                }, cancellationToken);
+            }
+            else
+            {
+                return await stepContext.EndDialogAsync(stepContext.Values[ProjectInfo], cancellationToken);
             }
             
-            // Exit the dialog, returning the collected user information.
-            return await stepContext.EndDialogAsync(stepContext.Values[ProjectInfo], cancellationToken);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using CloudNinja.Helpers;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
+using CloudNinja.Cards;
 
 namespace CloudNinja.Dialogs
 {
@@ -21,7 +22,7 @@ namespace CloudNinja.Dialogs
 
         private async Task<DialogTurnResult> SearchProjectAsync(DialogContext dialogContext, CancellationToken cancellationToken)
         {
-            await dialogContext.Context.SendActivityAsync(MessageFactory.Text("This is the existing project dialog"),cancellationToken);
+            await dialogContext.Context.SendActivityAsync(MessageFactory.Attachment(ActivityCards.ProjectStatusCard()),cancellationToken);
             return await dialogContext.EndDialogAsync();
         }
     }

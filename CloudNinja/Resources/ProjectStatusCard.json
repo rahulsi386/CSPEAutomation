@@ -1,0 +1,1475 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Large",
+      "text": "Project Status",
+      "id": "prjStatus",
+      "fontType": "Default",
+      "weight": "Bolder",
+      "isSubtle": true
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "80px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "PROJECT ID:",
+                      "id": "lblprojectid",
+                      "wrap": true,
+                      "weight": "Bolder"
+                    }
+                  ],
+                  "spacing": "Small"
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "specify unique identifier of project as guid",
+                      "wrap": true,
+                      "id": "txtprojid"
+                    }
+                  ],
+                  "spacing": "Small"
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "80px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "NAME: ",
+                      "weight": "Bolder"
+                    }
+                  ],
+                  "spacing": "Small"
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "specify given project name",
+                      "id": "txtprojname",
+                      "wrap": true
+                    }
+                  ],
+                  "spacing": "Small"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "style": "accent"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "INCEPTION"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/CircleGreen_coffee.png",
+              "horizontalAlignment": "Center"
+            }
+          ],
+          "spacing": "None"
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "PROJECT STARTED",
+                      "color": "Warning"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Request received by CSPE",
+                      "color": "Good"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Initial Meeting"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Get Requirements"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "inception"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px"
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "spacing": "None",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/Gray_Dot.png"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None",
+      "height": "stretch"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "DESIGN"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "spacing": "None",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "style": "default",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/CircleGreen_coffee.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Create Visio Design"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Create FW/NW doc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Create Sizing/Config doc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Update SDD"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "design",
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px"
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "spacing": "None",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/Gray_Dot.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "REVIEW"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "spacing": "None",
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/CircleGreen_coffee.png"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to Proj Team"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Proj Team Approval"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to TAD"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "TAD Approval"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to ISRM"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "ISRM Approval"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "review",
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px"
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "spacing": "None",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/Gray_Dot.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "SIGN-OFF"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "spacing": "None",
+          "backgroundImage": {
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center",
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/CircleGreen_coffee.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to CSPE"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "CSPE Signature"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to App Manager"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "App Manager Signature"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to TAD"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "TAD Signature"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to ISRM"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "ISRM Signature"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send SDD to SDM"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "SDM Signature"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "signoff",
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px"
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "spacing": "None",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/Gray_Dot.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "DEPLOYMENT"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "spacing": "None",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/CircleGreen_coffee.png"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Create Deployment Doc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Deployment Doc Approval",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send AppReg Approval to AAD",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "AAD Team Approval"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Application Registrations"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Az Resources Deployment",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send to NW/FW Team for Approval",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "NW/FW Team Approval"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Apply NW/FW Config"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send to IAM Team for Approval",
+                      "wrap": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "IAM Team Approval"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Grant Roles & Permission"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "deployment",
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "spacing": "None"
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "spacing": "None",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/Gray_Dot.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "90px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "HANDOVER"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "backgroundImage": {
+            "url": "https://messagecardplayground.azurewebsites.net/assets/SmallVerticalLineGray.png",
+            "fillMode": "RepeatVertically",
+            "horizontalAlignment": "Center"
+          },
+          "spacing": "None",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://messagecardplayground.azurewebsites.net/assets/CircleGreen_coffee.png",
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Create Handover Doc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "70px",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Pending",
+                      "color": "Warning"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Send Handover Doc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "PROJECT DELIVERED SUCCESSFULLY",
+                      "color": "Warning"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "handover",
+      "spacing": "None"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

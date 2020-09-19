@@ -64,5 +64,21 @@ namespace CloudNinja.Cards
             };
             return translationResultCard;
         }
+
+        public static Attachment ProjectStatusCard()
+        {
+            var paths = new[] { ".", "Resources", "ProjectStatusCard.json" };
+            var jsonString = File.ReadAllText(Path.Combine(paths));
+            var cardJson = JObject.Parse(jsonString);
+            //Below lines of code read the json file and modify its content then present it to the user as a card
+           
+
+            var projectStatusCard = new Attachment()
+            {
+                ContentType = "application/vnd.microsoft.card.adaptive",
+                Content = JsonConvert.DeserializeObject(cardJson.ToString()),
+            };
+            return projectStatusCard;
+        }
     }
 }

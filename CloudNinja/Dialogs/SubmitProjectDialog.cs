@@ -19,10 +19,13 @@ namespace CloudNinja.Dialogs
             InitialDialogId = nameof(WaterfallDialog);
         }
 
-        private async Task<DialogTurnResult> SubmitProjectAsync(DialogContext dialogContext, CancellationToken cancellationToken)
+        private async Task<DialogTurnResult> SubmitProjectAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            await dialogContext.Context.SendActivityAsync(MessageFactory.Text("Submit project dialog will submit project details to database"), cancellationToken);
-            return await dialogContext.EndDialogAsync();
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text("Your Project details are being registered in CSPE database..."), cancellationToken);
+            var result = (string)stepContext.Result;
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text(result));
+            //await AddProjectDetails.InvokeAddProjectDetailsFunction();
+            return await stepContext.EndDialogAsync();
         }
     }
 }
