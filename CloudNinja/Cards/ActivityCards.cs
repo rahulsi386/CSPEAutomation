@@ -25,16 +25,14 @@ namespace CloudNinja.Cards
             return welcomeCard.ToAttachment();
         }
 
-        public static SuggestedActions InitialOptions()
+        public static IList<CardAction> InitialOptions()
         {
-            SuggestedActions initialOptions = new SuggestedActions
+            var initialOptions = new List<CardAction> 
             {
-                Actions = new List<CardAction>
-                {
                     new CardAction{Title="New Project",Type=ActionTypes.PostBack,Value="New Project"},
-                    new CardAction{Title="Existing Project",Type=ActionTypes.PostBack,Value="Existing Project"},
-                    new CardAction{Title="Schedule Meeting",Type=ActionTypes.PostBack,Value="Schedule Meeting"}
-                }
+                    new CardAction{Title="Project Status",Type=ActionTypes.PostBack,Value="Project Status"},
+                    new CardAction{Title="Schedule Meeting",Type=ActionTypes.PostBack,Value="Schedule Meeting"},
+                    new CardAction{Title="Upload Docs",Type=ActionTypes.PostBack,Value="Upload Docs"}             
             };
             return initialOptions;
 
@@ -65,20 +63,52 @@ namespace CloudNinja.Cards
             return translationResultCard;
         }
 
-        public static Attachment ProjectStatusCard()
+        public static Attachment CheckProjectStatusCard()
         {
-            var paths = new[] { ".", "Resources", "ProjectStatusCard.json" };
+            var paths = new[] { ".", "Resources", "CheckProjectStatusCard.json" };
+            var jsonString = File.ReadAllText(Path.Combine(paths));
+            var cardJson = JObject.Parse(jsonString);
+            //Below lines of code read the json file and modify its content then present it to the user as a card
+
+
+            var checkProjectStatusCard = new Attachment()
+            {
+                ContentType = "application/vnd.microsoft.card.adaptive",
+                Content = JsonConvert.DeserializeObject(cardJson.ToString()),
+            };
+            return checkProjectStatusCard;
+        }
+
+        public static Attachment DisplayProjectStatusCard()
+        {
+            var paths = new[] { ".", "Resources", "DisplayProjectStatusCard.json" };
             var jsonString = File.ReadAllText(Path.Combine(paths));
             var cardJson = JObject.Parse(jsonString);
             //Below lines of code read the json file and modify its content then present it to the user as a card
            
 
-            var projectStatusCard = new Attachment()
+            var displayProjectStatusCard = new Attachment()
             {
                 ContentType = "application/vnd.microsoft.card.adaptive",
                 Content = JsonConvert.DeserializeObject(cardJson.ToString()),
             };
-            return projectStatusCard;
+            return displayProjectStatusCard;
+        }
+
+        public static Attachment UploadDocCard()
+        {
+            var paths = new[] { ".", "Resources", "UploadDocCard.json" };
+            var jsonString = File.ReadAllText(Path.Combine(paths));
+            var cardJson = JObject.Parse(jsonString);
+            //Below lines of code read the json file and modify its content then present it to the user as a card
+
+
+            var uploadDocCard = new Attachment()
+            {
+                ContentType = "application/vnd.microsoft.card.adaptive",
+                Content = JsonConvert.DeserializeObject(cardJson.ToString()),
+            };
+            return uploadDocCard;
         }
     }
 }

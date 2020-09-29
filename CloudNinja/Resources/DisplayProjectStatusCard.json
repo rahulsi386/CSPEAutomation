@@ -319,32 +319,6 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Create FW/NW doc"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
                       "text": "Create Sizing/Config doc"
                     }
                   ]
@@ -468,7 +442,8 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Send SDD to Proj Team"
+                      "text": "Review SDD with Project Team",
+                      "wrap": true
                     }
                   ]
                 }
@@ -494,7 +469,7 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Proj Team Approval"
+                      "text": "Review SDD with TAD"
                     }
                   ]
                 }
@@ -520,85 +495,7 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Send SDD to TAD"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "TAD Approval"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Send SDD to ISRM"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "ISRM Approval"
+                      "text": "Review SDD with ISRM"
                     }
                   ]
                 }
@@ -695,59 +592,7 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Send SDD to CSPE"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
                       "text": "CSPE Signature"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Send SDD to App Manager"
                     }
                   ]
                 }
@@ -799,32 +644,6 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Send SDD to TAD"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
                       "text": "TAD Signature"
                     }
                   ]
@@ -851,59 +670,7 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Send SDD to ISRM"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
                       "text": "ISRM Signature"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Send SDD to SDM"
                     }
                   ]
                 }
@@ -1079,7 +846,7 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "Send AppReg Approval to AAD",
+                      "text": "AAD Team Approval for App Registrations",
                       "wrap": true
                     }
                   ]
@@ -1106,33 +873,7 @@
                   "items": [
                     {
                       "type": "TextBlock",
-                      "text": "AAD Team Approval"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Application Registrations"
+                      "text": "Create App Registrations"
                     }
                   ]
                 }
@@ -1159,33 +900,6 @@
                     {
                       "type": "TextBlock",
                       "text": "Az Resources Deployment",
-                      "wrap": true
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Send to NW/FW Team for Approval",
                       "wrap": true
                     }
                   ]
@@ -1239,33 +953,6 @@
                     {
                       "type": "TextBlock",
                       "text": "Apply NW/FW Config"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": "70px",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Pending",
-                      "color": "Warning"
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": "stretch",
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Send to IAM Team for Approval",
-                      "wrap": true
                     }
                   ]
                 }

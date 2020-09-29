@@ -8,6 +8,7 @@ namespace CloudNinja.Helpers
 {
     public class ProjectInfo
     {
+        public string ProjectId { get; set; }
         public string ProjectName { get; set; }
         public string Description { get; set; }
         public string ProjectOwnerEmail { get; set; }

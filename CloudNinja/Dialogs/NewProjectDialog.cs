@@ -17,7 +17,6 @@ namespace CloudNinja.Dialogs
         public NewProjectDialog() : base(nameof(NewProjectDialog))
         {
             AddDialog(new TextPrompt(nameof(TextPrompt)));
-            //AddDialog(new SubmitProjectDialog());
             AddDialog(new ConfirmPrompt(nameof(ConfirmPrompt)));
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), new WaterfallStep[]
             {

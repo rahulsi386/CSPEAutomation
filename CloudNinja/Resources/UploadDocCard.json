@@ -1,0 +1,153 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Upload Document",
+      "size": "Medium",
+      "weight": "Bolder"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "110px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Project Id:"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.Text",
+              "placeholder": "specify project guid",
+              "id": "projectid"
+            }
+          ]
+        }
+      ],
+      "spacing": "Medium"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "110px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Doc Type:"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.ChoiceSet",
+              "choices": [
+                {
+                  "title": "VisioDesign",
+                  "value": "Visio Design"
+                },
+                {
+                  "title": "Sizing-ConfigDoc",
+                  "value": "Sizing/Config Doc"
+                },
+                {
+                  "title": "SDD",
+                  "value": "Solution Design Doc"
+                },
+                {
+                  "title": "DeploymentDoc",
+                  "value": "Deployment Doc"
+                },
+                {
+                  "title": "HandoverDoc",
+                  "value": "Handover Doc"
+                }
+              ],
+              "placeholder": "",
+              "id": "doctypechoice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "110px",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Specify File Path:"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.Text",
+              "placeholder": "specify complete path to file",
+              "id": "filepath"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "spacing": "Medium",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ActionSet",
+              "actions": [
+                {
+                  "type": "Action.Submit",
+                  "title": "Submit",
+                  "id": "btnsubmit",
+                  "style": "default"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ActionSet",
+              "actions": [
+                {
+                  "type": "Action.Submit",
+                  "title": "Cancel",
+                  "id": "btncancel"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace CloudNinjaFunctions
 {
-    public static class UpdateProjectDetails
+    public static class GetProjectStatusFunc
     {
-        [FunctionName("UpdateProjectDetails")]
+        [FunctionName("GetProjectStatus")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)

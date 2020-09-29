@@ -24,12 +24,7 @@ namespace CloudNinja.Bots
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
                     await turnContext.SendActivityAsync(MessageFactory.Attachment(ActivityCards.WelcomeCard()), cancellationToken);
-                    await turnContext.SendActivityAsync (MessageFactory.SuggestedActions(new List<CardAction>
-                    {
-                        new CardAction{Title="New Project",Type=ActionTypes.PostBack,Value="New Project"},
-                        new CardAction{Title="Existing Project",Type=ActionTypes.PostBack,Value="Existing Project"},
-                        new CardAction{Title="Schedule Meeting",Type=ActionTypes.PostBack,Value="Schedule Meeting"}
-                    }), cancellationToken);
+                    await turnContext.SendActivityAsync(MessageFactory.SuggestedActions(ActivityCards.InitialOptions()), cancellationToken);
                 }
             }
         }
